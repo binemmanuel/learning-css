@@ -56,3 +56,19 @@
 #nav-menu .nav-list a:hover {
 	background-color: rgba(255, 255, 255, 0.529);
 }
+
+/* Styles for Large screen sizes */
+@media screen and (min-width: 768px) {
+	#menu-toggler {
+		display: none;
+	}
+	#nav-menu {
+		transform: initial;
+		height: initial;
+		width: initial;
+		position: initial;
+	}
+	#nav-menu .nav-list {
+		flex-direction: row;
+	}
+}
