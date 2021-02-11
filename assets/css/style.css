@@ -52,6 +52,7 @@
 	font-size: 18px;
 	display: block;
 	padding: 15px 20px;
+	transition: background-color 1s;
 }
 #nav-menu .nav-list a:hover {
 	background-color: rgba(255, 255, 255, 0.529);
@@ -70,5 +71,21 @@
 	}
 	#nav-menu .nav-list {
 		flex-direction: row;
+	}
+	#nav-menu li .dropdown .subdropdown,
+	#nav-menu li .dropdown {
+		list-style: none;
+		position: absolute;
+		top: 56px;
+		background: black;
+		display: none;
+	}
+	#nav-menu .dropdown li:hover .subdropdown,
+	#nav-menu li:hover .dropdown {
+		display: block;
+	}
+	#nav-menu li .dropdown .subdropdown {
+		top: 0;
+		right: -108%;
 	}
 }
